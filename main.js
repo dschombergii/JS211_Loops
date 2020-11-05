@@ -158,6 +158,6 @@ legalDrinkingYear('Nov 6, 1999')
 
 // BONUS - .filter() out the people in the array who are younger than 21.
 
-const legalPeople = arrayOfPersons.filter(person => legalDrinkingYear(person.birthDate))
-console.log(legalPeople)
+const notLegalPeople = arrayOfPersons.filter(person => !legalDrinkingYear(person.birthDate))
+console.log(notLegalPeople)
 
